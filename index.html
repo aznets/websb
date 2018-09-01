@@ -19,8 +19,9 @@
 </head>
 
 <body>
-
-    <div id="wrapper">
+    <!-- for toggle off by default
+    <div id="wrapper"> -->
+    <div id="wrapper" class="toggled">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -74,12 +75,10 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Menu Toggle Script -->
-    <!-- for toggle on by default: in line 82 
-        $("#wrapper").toggleClass("toggled"); -->
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass();
+        $("#wrapper").toggleClass("toggled");
     });
     </script>
 
