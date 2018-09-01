@@ -74,10 +74,12 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Menu Toggle Script -->
+    <!-- for toggle on by default: in line 82 
+        $("#wrapper").toggleClass("toggled"); -->
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+        $("#wrapper").toggleClass();
     });
     </script>
 
